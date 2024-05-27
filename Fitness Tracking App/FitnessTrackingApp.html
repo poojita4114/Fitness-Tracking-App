@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracking App</title>
+    <link rel="stylesheet" href="FitnessTrackingApp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracking App</h1>
+        <form id="workout-form">
+            <input type="text" id="workout" placeholder="Workout Type (e.g., Running)" required>
+            <input type="number" id="duration" placeholder="Duration (minutes)" required>
+            <input type="date" id="date" required>
+            <button type="submit">Log Workout</button>
+        </form>
+        <div id="goals-section">
+            <h2>Set Your Fitness Goals</h2>
+            <form id="goals-form">
+                <input type="number" id="goal-duration" placeholder="Goal Duration (minutes)" required>
+                <button type="submit">Set Goal</button>
+            </form>
+        </div>
+        <h2>Logged Workouts</h2>
+        <ul id="workout-list"></ul>
+    </div>
+    <script src="FitnessTrackingApp.js"></script>
+</body>
+</html>
